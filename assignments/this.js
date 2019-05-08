@@ -13,11 +13,30 @@
 
 // code example for Window Binding
 
+function hello(name) {
+    return name;
+}
+hello("Newman");
+console.log (this);
+
 // Principle 2
 
 // code example for Implicit Binding
 
+const wizard = {
+    name: "Gandolf",
+    age: 1000,
+    beard: "white",
+    mission: function() {
+        return '${this.name} is going to shave ${this.beard}'
+    }
+}
+
+console.log(wizard.mission())
+
 // Principle 3
+
+
 
 // code example for New Binding
 
